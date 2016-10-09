@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, .wrapper {
+    height: 100%;
+}
+
+.wrapper {
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 40px;
+    border-bottom: 1px solid transparent;
+    position: relative;
+}
+
+.menu{        
+    background-color: #064F8E;
+    height: 40px;    
+}
+
+li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+a {
+    text-decoration: none;
+    color:turquoise; 
+    line-height: 40px;      
+}
+
+a:hover {
+    color:white;
+}
+
+.form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    max-width: 500px;
+    margin: 0 auto;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.form header {
+    font-size: 25px;
+    color:white;    
+    padding-left: 35%;
+    border-bottom: 5px solid;
+    border-color: greenyellow; /*как сделать "прозрачную" линию? Применить transparent не получается - он прозрачный по отношению к форме*/
+}
+
