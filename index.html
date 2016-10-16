@@ -1,38 +1,46 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>Form</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/reset.css" rel="stylesheet" type="text/css"/>
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>        
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div class="wrapper">
             <div class="menu">
                 <ul>
-                    <li><a href="#">Meu YouBike</a></li>
-                    <li><a href="#">Vender</a></li> 
-                    <li><a href="#">Forum</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Ola <u>Entrar</u> ou <u>Cadastre-se</u></a></li>
+                    <li><a href="#">Minhas Ofertas</a></li>
                     <li><a href="#">Ajuda</a></li>
-                     <li><a href="#">Minhas Ofertas</a></li>                    
-                    <li><a href="#">Ola! Entrar-ou Cadastre-se</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Vender</a></li>                                       
+                    <li><a href="#">Meu YouBike</a></li>                    
                 </ul>
             </div>
-            
-            <div class="form">
-                <header>Cadastre-se</header>
-                <form>
-                    <input type="text" name="First Name" value="" placeholder="First Name">
-                    <input type="text" name="Last Name" value="" placeholder="Last Name">
-                    <input type="text" name="Email Address" value="" placeholder="Email Address">
-                    <input type="text" name="Choose Password" value="" placeholder="Choose Password">
-                    <input type="text" name="Password Confirm" value="" placeholder="Password Confirm">
-                    <input type="radio" name="Send me Youbike updates and tips" value="Send me Youbike updates and tips">
-                </form>
-            </div>
+            <div class="forms">
+                <div class="form-top">
+                    <p>Cadastre-Se</p>
+                </div>
+                <div class="form-center">
+                    <button type="button"><b>Log in </b>with <b>Facebook</b></button>
+                    <p>---------- OU ----------</p>
+                    <form>
+                        <input type="text" name="FirstName" value="" placeholder="First Name">
+                        <input type="text" name="LastName" value="" placeholder="Last Name">
+                        <input type="text" name="EmailAddress" value="" placeholder="Email Address">
+                        <input type="password" name="Password" value="" placeholder="Password"> <!--не уверен в типе<!-->
+                        <input type="password" name="ConfirmPassword" value="" placeholder="Confirm Password"> <!--не уверен в типе<!-->
+                        <br><input type="checkbox" name="updates" value="updates">Send me YouBike updates and tips
+                        <button type="submit" name="submit">Create my Account</button>
+                    </form> 
+                </div>
+                <div class="form-bottom">                    
+                    <p>By clicking the button above, you agree to the Term of Service<br>Xiev our Privacy Policy</p>                                        
+                </div>
+            </div>            
         </div>
     </body>
 </html>
